@@ -1,0 +1,615 @@
+/* -------------------------------------------------------------------- */
+/* CSS - Profile container */
+/* -------------------------------------------------------------------- */
+.profileContainer {
+    height: calc(100vh - 80px);
+    margin: 40px 0px 0px 0px;
+    background-color: var(--background-transparent);
+    backdrop-filter: blur(2px);
+    overflow-y: auto;
+}
+/* -------------------------------------------------------------------- */
+/* CSS - Profile content */
+/* -------------------------------------------------------------------- */
+.profileContainer > .profileContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.profileContainer > .profileContent > .skeleton-container-full > .row {
+    margin: 10px 0px;
+}
+/* -------------------------------------------------------------------- */
+/* CSS - Profile header */
+/* -------------------------------------------------------------------- */
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > .profileHeader {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    border-radius: 5px;
+    background-color: var(--background-color);
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+}
+/* -------------------------------------------------------------------- */
+/* CSS - Profile banner */
+/* -------------------------------------------------------------------- */
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > .profileHeader > .profileBanner {
+    width: 100%;
+    height: 150px;
+    position: relative;
+    border-bottom: 1px solid var(--primary-color);
+}
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > .profileHeader > .profileBanner > #themeSwitch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    min-height: inherit;
+    height: 20px;
+    position: absolute;
+    bottom: -50px;
+    left: 100px;
+    border-radius: 50%;
+    border: 1px solid var(--background-color);
+    background-color: var(--background-transparent);
+    backdrop-filter: blur(2px);
+    box-shadow: var(--box-shadow);
+    z-index: 50;
+}
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > .profileHeader > .profileBanner > #themeSwitch > i {
+    font-size: 12px;
+}
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > .profileHeader > .profileBanner > #themeSwitch > i[class="fas fa-sun"] {
+    color: #FFB700;
+}
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > .profileHeader > .profileBanner > #themeSwitch > i[class="fas fa-moon"] {
+    color: #FFFFFF;
+}
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > .profileHeader > .profileBanner > #avatar {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    bottom: -65px;
+    left: 0px;
+    border: 1px solid var(--background-color);
+    border-radius: 50%;
+    box-shadow: var(--box-shadow);
+}
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > .profileHeader > .profileBanner > #banner {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > .profileHeader > .profileBanner > #settings,
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > .profileHeader > .profileBanner > #deleteAccount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    min-height: inherit;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--background-color);
+    background-color: var(--background-transparent);
+    backdrop-filter: blur(2px);
+    box-shadow: var(--box-shadow);
+    transition: background-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out, border-color 0.5s ease-in-out;
+    z-index: 50;
+}
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > .profileHeader > .profileBanner > #deleteAccount {
+    width: 0px;
+    right: 50px;
+    color: var(--text-color);
+    border: none;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: width 0.5s ease-in-out, background-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out, border-color 0.5s ease-in-out;
+}
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > .profileHeader > .profileBanner > #deleteAccount.showDeleteAccountButton {
+    width: 160px;
+    border: 1px solid var(--background-color);
+}
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > .profileHeader > .profileBanner > #settings:hover,
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > .profileHeader > .profileBanner > #deleteAccount:hover {
+    border-color: var(--primary-color);
+    background-color: var(--primary-color);
+    box-shadow: 0px 0px 10px var(--primary-color);
+}
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > .profileHeader > .profileBanner > #settings > i {
+    font-size: 16px;
+    color: var(--text-color);
+}
+/* -------------------------------------------------------------------- */
+/* CSS - Profile buttons */
+/* -------------------------------------------------------------------- */
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > .profileHeader > .profileButtons {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    margin: 10px 0px;
+}
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > .profileHeader > .profileButtons > button {
+    margin: 0px 10px 0px auto;
+    padding: 5px 10px;
+    color: var(--text-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    background-color: var(--background-color);
+    box-shadow: var(--box-shadow);
+    transition: background-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > .profileHeader > .profileButtons > button:hover {
+    background-color: var(--primary-color);
+    box-shadow: 0px 0px 10px var(--primary-color);
+}
+/* -------------------------------------------------------------------- */
+/* CSS - Profile infos */
+/* -------------------------------------------------------------------- */
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > .profileHeader > .profileInfos {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > .profileHeader > .profileInfos > h2 {
+    color: var(--text-color);
+}
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > .profileHeader > .profileInfos > a {
+    min-height: inherit;
+    color: var(--primary-color);
+}
+/* -------------------------------------------------------------------- */
+/* CSS - Profile stats */
+/* -------------------------------------------------------------------- */
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > .profileHeader > .profileStats {
+    border-top: 1px solid var(--primary-color);
+}
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > .profileHeader > .profileStats > .row > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > .profileHeader > .profileStats > .row > div > h5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    color: var(--text-color);
+}
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > .profileHeader > .profileStats > .row > div > p {
+    margin: 10px auto;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+/* -------------------------------------------------------------------- */
+/* CSS - Details */
+/* -------------------------------------------------------------------- */
+.profileContainer > .profileContent > .skeleton-container-full > .row > .details > .row > .profileDetails,
+.profileContainer > .profileContent > .skeleton-container-full > .row > .details > .row > .biography {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    border-radius: 5px;
+    background-color: var(--background-color);
+    box-shadow: var(--box-shadow);
+}
+.profileContainer > .profileContent > .skeleton-container-full > .row > .details > .row > .profileDetails > div,
+.profileContainer > .profileContent > .skeleton-container-full > .row > .details > .row > .biography > div {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+.profileContainer > .profileContent > .skeleton-container-full > .row > .details > .row > .profileDetails > div > i {
+    margin: 0px 10px;
+    color: var(--primary-color);
+    font-size: 16px;
+}
+.profileContainer > .profileContent > .skeleton-container-full > .row > .details > .row > .profileDetails > div > p {
+    color: var(--text-color);
+}
+.profileContainer > .profileContent > .skeleton-container-full > .row > .details > .row > .biography > div > p {
+    padding: 0px 10px;
+    color: var(--text-color);
+}
+.profileContainer > .profileContent > .skeleton-container-full > .row > .details > .row > .followingsList,
+.profileContainer > .profileContent > .skeleton-container-full > .row > .details > .row > .followersList {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    position: relative;
+    border-radius: 5px;
+    background-color: var(--background-color);
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+}
+.profileContainer > .profileContent > .skeleton-container-full > .row > .details > .row > .followingsList > h5,
+.profileContainer > .profileContent > .skeleton-container-full > .row > .details > .row > .followersList > h5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    color: var(--text-color);
+    border-bottom: 1px solid var(--primary-color);
+    background-color: var(--background-color);
+    box-shadow: var(--box-shadow);
+    z-index: 10;
+}
+.profileContainer > .profileContent > .skeleton-container-full > .row > .details > .row > .followingsList > div,
+.profileContainer > .profileContent > .skeleton-container-full > .row > .details > .row > .followersList > div {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0px 0px 0px;
+    overflow-y: auto;
+}
+.profileContainer > .profileContent > .skeleton-container-full > .row > .details > .row > .followingsList > div > .card,
+.profileContainer > .profileContent > .skeleton-container-full > .row > .details > .row > .followersList > div > .card {
+    display: flex;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+}
+.profileContainer > .profileContent > .skeleton-container-full > .row > .details > .row > .followingsList > div > .card > .avatar,
+.profileContainer > .profileContent > .skeleton-container-full > .row > .details > .row > .followersList > div > .card > .avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profileContainer > .profileContent > .skeleton-container-full > .row > .details > .row > .followingsList > div > .card > div:not(.avatar),
+.profileContainer > .profileContent > .skeleton-container-full > .row > .details > .row > .followersList > div > .card > div:not(.avatar) {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 60px);
+    height: 100%;
+}
+.profileContainer > .profileContent > .skeleton-container-full > .row > .details > .row > .followingsList > div > .card > .avatar > img,
+.profileContainer > .profileContent > .skeleton-container-full > .row > .details > .row > .followersList > div > .card > .avatar > img {
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--background-color);
+    border-radius: 50%;
+    box-shadow: var(--box-shadow);
+}
+.profileContainer > .profileContent > .skeleton-container-full > .row > .details > .row > .followingsList > div > .card > div:not(.avatar) > div,
+.profileContainer > .profileContent > .skeleton-container-full > .row > .details > .row > .followersList > div > .card > div:not(.avatar) > div {
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+.profileContainer > .profileContent > .skeleton-container-full > .row > .details > .row > .followingsList > div > .card > div:not(.avatar) > div > h5,
+.profileContainer > .profileContent > .skeleton-container-full > .row > .details > .row > .followersList > div > .card > div:not(.avatar) > div > h5 {
+    padding: 0px 0px 0px 10px;
+    color: var(--text-color);
+}
+.profileContainer > .profileContent > .skeleton-container-full > .row > .details > .row > .followingsList > div > .card > div:not(.avatar) > div > a,
+.profileContainer > .profileContent > .skeleton-container-full > .row > .details > .row > .followersList > div > .card > div:not(.avatar) > div > a {
+    min-height: fit-content;
+    height: 100%;
+    padding: 0px 0px 0px 10px;
+    color: var(--primary-color);
+}
+/* -------------------------------------------------------------------- */
+/* CSS - Profile messages */
+/* -------------------------------------------------------------------- */
+.messages.showUsers {
+    bottom: 40px !important;
+}
+.messages > .row > .messagesContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 40px;
+    height: fit-content;
+    position: relative;
+    border-radius: 5px;
+    background-color: var(--background-color);
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+}
+.messages > .row > .messagesContainer > h5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    color: var(--text-color);
+    border-bottom: 1px solid var(--primary-color);
+    background-color: var(--background-color);
+    box-shadow: var(--box-shadow);
+    z-index: 10;
+}
+.messages > .row > .messagesContainer > div {
+    display: flex;
+    flex-direction: column;
+    max-height: 1400px;
+    margin: 40px 0px 0px 0px;
+    cursor: pointer;
+    overflow-y: auto;
+}
+@media screen and (max-width: 750px) {
+    .messages > .row > .messagesContainer > div {
+        align-items: center;
+    }
+}
+@media screen and (max-width: 550px) {
+    .messages > .row > .messagesContainer > div {
+        max-height: calc(440px - 180px);
+    }
+}
+.messages > .row > .messagesContainer > div > .card {
+    display: flex;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+}
+@media screen and (max-width: 750px) {
+    .messages > .row > .messagesContainer > div > .card {
+        width: fit-content;
+    }
+}
+.messages > .row > .messagesContainer > div > .card > .avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.messages > .row > .messagesContainer > div > .card > div:not(.avatar) {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 60px);
+    height: 100%;
+}
+.messages > .row > .messagesContainer > div > .card > .avatar > img {
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--background-color);
+    border-radius: 50%;
+    box-shadow: var(--box-shadow);
+}
+.messages > .row > .messagesContainer > div > .card > div:not(.avatar) > div {
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+.messages > .row > .messagesContainer > div > .card > div:not(.avatar) > div > h5 {
+    padding: 0px 0px 0px 10px;
+    color: var(--text-color);
+}
+.messages > .row > .messagesContainer > div > .card > div:not(.avatar) > div > a {
+    min-height: fit-content;
+    height: 100%;
+    padding: 0px 0px 0px 10px;
+    color: var(--primary-color);
+}
+/* -------------------------------------------------------------------- */
+/* CSS - Chatbox */
+/* -------------------------------------------------------------------- */
+#chatBox {
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    left: 10px;
+    bottom: calc(-220px - 1px);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: var(--background-color);
+    box-shadow: var(--box-shadow);
+    transition: bottom 0.5s ease-in-out;
+    overflow: hidden;
+}
+@media screen and (max-width: 430px) {
+    #chatBox {
+        width: 220px;
+    }
+}
+#chatBox > h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    position: relative;
+    color: var(--text-color);
+    border-bottom: 1px solid var(--primary-color);
+    background-color: var(--background-color);
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    z-index: 10;
+}
+#chatBox > h4 > span {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border-radius: 5px;
+    background-color: var(--background-transparent);
+    box-shadow: var(--box-shadow) inset;
+    animation: flash 2s infinite;
+}
+#chatBox > .input,
+#chatBox > .currentUser {
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    border-top: 1px solid #00000020;
+}
+#chatBox > .messages {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100% - 110px);
+    margin: 40px 0px 0px 0px;
+    overflow-y: auto;
+}
+#chatBox > .messages > div {
+    display: flex;
+    max-width: 190px;
+    color: var(--text-color);
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+}
+#chatBox > .messages > div > img {
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--background-color);
+    border-radius: 50%;
+    box-shadow: var(--box-shadow);
+}
+#chatBox > .messages > div > p {
+    padding: 5px;
+    word-wrap: break-word;
+}
+#chatBox > .currentUser {
+    display: flex;
+    height: 40px;
+    top: 40px;
+    border-top: none;
+    border-bottom: 1px solid #00000020;
+}
+#chatBox > .currentUser > .avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 100%;
+}
+#chatBox > .currentUser > .avatar > img {
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--background-color);
+    border-radius: 50%;
+    box-shadow: var(--box-shadow);
+}
+#chatBox > .currentUser > .fullname {
+    display: flex;
+    align-items: center;
+    width: calc(100% - 40px);
+    height: 100%;
+}
+#chatBox > .currentUser > .fullname > h5 {
+    padding: 0px 0px 0px 10px;
+    color: var(--text-color);
+}
+#chatBox > .input > input {
+    width: 100%;
+    height: 30px;
+    padding: 5px 30px 5px 10px;
+    color: var(--text-color);
+}
+#chatBox > .input > i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 30px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: var(--text-color);
+    cursor: pointer;
+}
+/* -------------------------------------------------------------------- */
+/* CSS - Profile edit form */
+/* -------------------------------------------------------------------- */
+.editFormContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    background-color: var(--background-transparent);
+    backdrop-filter: blur(10px);
+    z-index: 200;
+}
+.editFormContainer > form {
+    display: flex;
+    flex-direction: column;
+}
+.editFormContainer > form > div {
+    display: flex;
+    align-items: center;
+    width: 280px;
+    margin: 5px auto;
+    position: relative;
+}
+.editFormContainer > form > div > label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    padding: 5px 10px;
+    color: var(--text-color);
+    white-space: nowrap;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+.editFormContainer > form > div > label:hover {
+    background-color: var(--primary-color);
+    box-shadow: 0px 0px 10px var(--primary-color);
+}
+.editFormContainer > form > div > input[type="file"] {
+    width: calc(100% - 90px);
+    opacity: 0;
+}
+.editFormContainer > form > div > p {
+    display: flex;
+    align-items: center;
+    width: calc(100% - 100px);
+    height: 100%;
+    padding: 0px 10px;
+    position: absolute;
+    right: 0px;
+    color: var(--text-color);
+    white-space: nowrap;
+    border-radius: 5px;
+    border: 1px solid var(--background-color);
+    background-color: var(--background-color);
+    box-shadow: var(--box-shadow) inset;
+    overflow: hidden;
+}
+.editFormContainer > form > textarea {
+    width: 280px;
+    height: 120px;
+    margin: 10px auto;
+    padding: 5px 10px;
+    color: var(--text-color);
+    border: 1px solid var(--background-color);
+    border-radius: 5px;
+    background-color: var(--background-color);
+    box-shadow: var(--box-shadow) inset;
+    resize: none;
+    transition: border-color 0.5s ease-in-out, background-color 0.5s ease-in-out, color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+.editFormContainer > form > textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0px 0px 10px var(--primary-color);
+}
+.editFormContainer > form > div > button,
+.editFormContainer > form > div > input[type="submit"] {
+    margin: 10px auto;
+    padding: 5px 10px;
+    color: var(--text-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    transition: background-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+.editFormContainer > form > div > button:hover,
+.editFormContainer > form > div > input[type="submit"]:hover {
+    background-color: var(--primary-color);
+    box-shadow: 0px 0px 10px var(--primary-color);
+}

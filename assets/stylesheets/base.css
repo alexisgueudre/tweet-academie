@@ -1,0 +1,50 @@
+/* -------------------------------------------------------------------- */
+/* CSS - Body */
+/* -------------------------------------------------------------------- */
+body {
+    background-image: url("../images/backgrounds/bckg1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    animation: fadeIn 1s ease-in-out;
+}
+/* -------------------------------------------------------------------- */
+/* CSS - Separator */
+/* -------------------------------------------------------------------- */
+.separator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    background-color: var(--background-color);
+}
+.separator > .triangle {
+    color: var(--primary-color);
+}
+.separator > .line {
+    width: calc((100% / 2) - 20px);
+    height: 1px;
+    margin: auto 10px;
+    background-color: var(--primary-color);
+}
+/* -------------------------------------------------------------------- */
+/* CSS - Footer */
+/* -------------------------------------------------------------------- */
+footer {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    border-top: 1px solid var(--primary-color);
+    background-color: var(--background-color);
+    box-shadow: var(--box-shadow);
+    z-index: 200;
+}
+footer > p {
+    margin: 10px auto;
+    padding: 0px 10px;
+    color: var(--text-color);
+    text-align: center;
+}
+footer > p > #authors {
+    color: var(--primary-color);
+}

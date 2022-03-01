@@ -1,0 +1,399 @@
+/* -------------------------------------------------------------------- */
+/* CSS - Home container */
+/* -------------------------------------------------------------------- */
+.homeContainer {
+    height: calc(100vh - 80px);
+    margin: 40px 0px 0px 0px;
+    background-color: var(--background-transparent);
+    backdrop-filter: blur(2px);
+    overflow-y: auto;
+}
+/* -------------------------------------------------------------------- */
+/* CSS - Header */
+/* -------------------------------------------------------------------- */
+.homeContainer > .homeHeader {
+    display: flex;
+    align-items: center;
+    height: 400px;
+    overflow: hidden;
+}
+/* -------------------------------------------------------------------- */
+/* CSS - Header containers */
+/* -------------------------------------------------------------------- */
+.homeContainer > .homeHeader > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.5s ease-in-out;
+}
+@media (min-width: 550px) {
+    .homeContainer > .homeHeader > div {
+        width: 50%;
+        min-width: inherit;
+        max-width: 400px;
+    }
+}
+@media (min-width: 750px) {
+    .homeContainer > .homeHeader > div {
+        width: 50%;
+        min-width: inherit;
+        max-width: inherit;
+    }
+    .homeContainer > .homeHeader > div:first-of-type {
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: calc(100% - 400px);
+    }
+    .homeContainer > .homeHeader > div:last-of-type {
+        max-width: 400px;
+    }
+}
+.homeContainer > .homeHeader > div > h1,
+.homeContainer > .homeHeader > div > p {
+    margin: 10px auto;
+    color: var(--text-alternative);
+    text-align: center;
+}
+@media (min-width: 750px) {
+    .homeContainer > .homeHeader > div > h1,
+    .homeContainer > .homeHeader > div > p {
+        margin: 10px auto 0px 10px;
+        padding: 0px 10px 0px 0px;
+        text-align: left;
+    }
+    .homeContainer > .homeHeader > div > h1 > img {
+        width: 30px;
+        margin: 0px;
+    }
+    .homeContainer > .homeHeader > div > p > span {
+        color: var(--primary-color);
+        font-weight: bold;
+    }
+}
+.homeContainer > .homeHeader > div > .registerButton {
+    margin: 10px auto;
+    padding: 5px 10px;
+    color: var(--text-alternative);
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+}
+/* -------------------------------------------------------------------- */
+/* CSS - Home content */
+/* -------------------------------------------------------------------- */
+.homeContainer > .fakeBest {
+    background-color: var(--background-color);
+}
+.homeContainer > .fakeBest > .skeleton-container-full > .row > div {
+    display: flex;
+    flex-direction: column;
+}
+.homeContainer > .fakeBest > .skeleton-container-full > .row > div > i {
+    margin: 10px auto 0px auto;
+    color: var(--primary-color);
+    font-size: 30px;
+}
+.homeContainer > .fakeBest > .skeleton-container-full > .row > div > p {
+    padding: 10px 0px;
+    text-align: center;
+    color: var(--text-color);
+}
+.homeContainer > .fakeBest > .skeleton-container-full > .row > div > p > span {
+    color: var(--primary-color);
+}
+.homeContainer > .matrixTeam {
+    background-color: var(--background-color);
+}
+.homeContainer > .matrixTeam > .skeleton-container-full > .row {
+    margin: 10px auto;
+}
+@media (min-width: 1200px) {
+    .homeContainer > .matrixTeam > .skeleton-container-full > .row {
+        max-width: 1050px;
+    }
+}
+.homeContainer > .matrixTeam > .skeleton-container-full > .row > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.homeContainer > .matrixTeam > .skeleton-container-full > .row > div > a {
+    max-height: inherit;
+}
+.homeContainer > .matrixTeam > .skeleton-container-full > .row > div > a > img {
+    width: 120px;
+    height: 120px;
+    border: 1px solid var(--background-color);
+    border-radius: 50%;
+    box-shadow: var(--box-shadow);
+    filter: grayscale(1);
+    transition: filter 0.5s ease-in-out, border-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+.homeContainer > .matrixTeam > .skeleton-container-full > .row > div > a > img:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0px 0px 10px var(--primary-color);
+    filter: grayscale(0);
+}
+.homeContainer > .matrixTeam > .skeleton-container-full > .row > div > h4 {
+    color: var(--primary-color);
+}
+.homeContainer > .matrixTeam > .skeleton-container-full > .row > div > p {
+    color: var(--text-color);
+    text-align: center;
+    font-style: italic;
+}
+/* -------------------------------------------------------------------- */
+/* CSS - Home logged content */
+/* -------------------------------------------------------------------- */
+.homeContainer > .loggedContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row {
+    margin: 10px 0px;
+}
+/* -------------------------------------------------------------------- */
+/* CSS - Home greeting logged in user */
+/* -------------------------------------------------------------------- */
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > div:first-of-type {
+    display: flex;
+    height: 80px;
+    border-radius: 5px;
+    background-color: var(--background-color);
+    box-shadow: var(--box-shadow);
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > div:first-of-type > img {
+    min-width: 60px;
+    width: 60px;
+    height: calc(100% - 20px);
+    margin: 10px 14px 10px 15px;
+    border: 1px solid var(--background-color);
+    border-radius: 50%;
+    box-shadow: var(--box-shadow);
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > div:first-of-type > .infos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border-left: 1px solid #00000020;
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > div:first-of-type > .infos > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > div:first-of-type > .infos > div:first-of-type {
+    border-bottom: 1px solid #00000020;
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > div:first-of-type > .infos > div > a {
+    min-height: inherit;
+    padding: 0px 10px;
+    color: var(--primary-color);
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > div:first-of-type > .infos > div > p {
+    padding: 0px 10px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > div:first-of-type > .infos > div:last-of-type > p {
+    font-weight: normal;
+    color: var(--text-color);
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > div:first-of-type > .infos > div:last-of-type > p > span {
+    color: var(--primary-color);
+}
+/* -------------------------------------------------------------------- */
+/* CSS - Home tweet form */
+/* -------------------------------------------------------------------- */
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > .tweetFormContainer > #wysiwyg {
+    display: flex;
+    flex-direction: column;
+    min-width: 210px;
+    position: relative;
+    border-radius: 5px;
+    background-color: var(--background-color);
+    box-shadow: var(--box-shadow);
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > .tweetFormContainer > #wysiwyg > #sendTweet,
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > .tweetFormContainer > #wysiwyg > #clearTweet,
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > .tweetFormContainer > #wysiwyg > #uploadImage {
+    margin: 0px;
+    padding: 5px 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: var(--text-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    background-color: var(--background-color);
+    box-shadow: var(--box-shadow);
+    transition: background-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > .tweetFormContainer > #wysiwyg > #sendTweet:hover,
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > .tweetFormContainer > #wysiwyg > #clearTweet:hover,
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > .tweetFormContainer > #wysiwyg > #uploadImage:hover {
+    background-color: var(--primary-color);
+    box-shadow: 0px 0px 10px var(--primary-color);
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > .tweetFormContainer > #wysiwyg > #clearTweet {
+    right: 90px;
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > .tweetFormContainer > #wysiwyg > #uploadImage {
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    left: 10px;
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > .tweetFormContainer > #wysiwyg > #uploadImage > i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    font-size: 16px;
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > .tweetFormContainer > #wysiwyg > #uploadImage > form > input {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    z-index: 10;
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > .tweetFormContainer > #wysiwyg > #uploadImage * {
+    cursor: pointer;
+}
+/* -------------------------------------------------------------------- */
+/* CSS - Home tweet chars count */
+/* -------------------------------------------------------------------- */
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > .tweetFormContainer > #wysiwyg > #charsCount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    border-bottom: 1px solid #00000020;
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > .tweetFormContainer > #wysiwyg > #charsCount > p {
+    margin: 0px 0px 0px auto;
+    padding: 0px 10px;
+    color: var(--text-color);
+}
+/* -------------------------------------------------------------------- */
+/* CSS - Home tweet form textarea */
+/* -------------------------------------------------------------------- */
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > .tweetFormContainer > #wysiwyg > #textEditor {
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+    color: var(--text-color);
+    resize: none;
+    overflow: auto;
+}
+/* -------------------------------------------------------------------- */
+/* CSS - Home tweet form suggestions */
+/* -------------------------------------------------------------------- */
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > .tweetFormContainer > #wysiwyg > #suggest {
+    display: flex;
+    flex-direction: column;
+    max-height: 90px;
+    position: absolute;
+    top: 75px;
+    left: 10px;
+    border-radius: 5px;
+    background-color: var(--background-color);
+    box-shadow: var(--box-shadow);
+    overflow-y: auto;
+    z-index: 300;
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > .tweetFormContainer > #wysiwyg > #suggest > div {
+    width: 200px;
+    cursor: pointer;
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > .tweetFormContainer > #wysiwyg > #suggest > div > h5 {
+    padding: 5px 10px;
+    color: var(--primary-color);
+}
+/* -------------------------------------------------------------------- */
+/* CSS - Home search input */
+/* -------------------------------------------------------------------- */
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .searchInputContainer > .row > div {
+    display: flex;
+    height: fit-content;
+    border-radius: 5px;
+    background-color: var(--background-color);
+    box-shadow: var(--box-shadow);
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .searchInputContainer > .row > div:first-of-type > form {
+    width: 100%;
+    position: relative;
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .searchInputContainer > .row > div:first-of-type > form > input {
+    width: calc(100% - 10px);
+    margin: 5px;
+    padding: 5px 30px 5px 10px;
+    color: var(--text-color);
+    border: 1px solid var(--background-color);
+    border-radius: 5px;
+    background-color: var(--background-color);
+    box-shadow: var(--box-shadow) inset;
+    transition: border-color 0.5s ease-in-out, background-color 0.5s ease-in-out, color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .searchInputContainer > .row > div:first-of-type > form > input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0px 0px 10px var(--primary-color);
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .searchInputContainer > .row > div:first-of-type > form > i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+/* -------------------------------------------------------------------- */
+/* CSS - Home search results container */
+/* -------------------------------------------------------------------- */
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .searchInputContainer > .row > #searchResultsContainer {
+    flex-direction: column;
+    width: 100%;
+    max-height: 1400px;
+    overflow-y: auto;
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .searchInputContainer > .row > #searchResultsContainer > a {
+    display: flex;
+    align-items: center;
+    width: calc(100% - 10px);
+    max-height: inherit;
+    margin: 5px;
+    padding: 5px 10px;
+    color: var(--text-color);
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .searchInputContainer > .row > #searchResultsContainer > a > img {
+    min-width: 40px;
+    width: 40px;
+    height: 40px;
+    margin: 0px;
+    border: 1px solid var(--background-color);
+    border-radius: 50%;
+    box-shadow: var(--box-shadow);
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .searchInputContainer > .row > #searchResultsContainer > a > p {
+    padding: 0px 0px 0px 10px;
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .searchInputContainer > .row > #searchResultsContainer > a > p > span {
+    color: var(--primary-color);
+}

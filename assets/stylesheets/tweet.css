@@ -1,0 +1,292 @@
+/* -------------------------------------------------------------------- */
+/* CSS - Profile tweets */
+/* -------------------------------------------------------------------- */
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > div:not(:first-of-type):not(:nth-of-type(2)),
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > div:not(.profileHeader) {
+    display: flex;
+    flex-direction: column;
+    min-width: 210px;
+    position: relative;
+    border-radius: 5px;
+    background-color: var(--background-color);
+    box-shadow: var(--box-shadow);
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > div:not(:first-of-type):not(:nth-of-type(2)) > .tweetAuthor,
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > div:not(.profileHeader) > .tweetAuthor {
+    display: flex;
+    height: 80px;
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > div:not(:first-of-type):not(:nth-of-type(2)) > .tweetAuthor > img,
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > div:not(.profileHeader) > .tweetAuthor > img {
+    width: 60px;
+    height: calc(100% - 20px);
+    margin: 10px 14px 10px 15px;
+    border: 1px solid var(--background-color);
+    border-radius: 50%;
+    box-shadow: var(--box-shadow);
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > div:not(:first-of-type):not(:nth-of-type(2)) > .tweetAuthor > div,
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > div:not(.profileHeader) > .tweetAuthor > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-left: 1px solid #00000020;
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > div:not(:first-of-type):not(:nth-of-type(2)) > .tweetAuthor > div > div,
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > div:not(.profileHeader) > .tweetAuthor > div > div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > div:not(:first-of-type):not(:nth-of-type(2)) > .tweetAuthor > div > div:first-of-type,
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > div:not(.profileHeader) > .tweetAuthor > div > div:first-of-type {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #00000020;
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > div:not(:first-of-type):not(:nth-of-type(2)) > .tweetAuthor > div > div > h3,
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > div:not(.profileHeader) > .tweetAuthor > div > div > h3 {
+    padding: 0px 0px 0px 10px;
+    color: var(--text-color);
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > div:not(:first-of-type):not(:nth-of-type(2)) > .tweetAuthor > div > div:first-of-type > p,
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > div:not(.profileHeader) > .tweetAuthor > div > div:first-of-type > p {
+    margin: 0px 10px 0px 0px;
+    padding: 5px;
+    position: absolute;
+    right: 0px;
+    color: var(--text-color);
+    border-radius: 5px;
+    background-color: var(--background-transparent);
+    backdrop-filter: blur(2px);
+    box-shadow: var(--box-shadow);
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > div:not(:first-of-type):not(:nth-of-type(2)) > .tweetAuthor > div > div:first-of-type > p > a,
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > div:not(.profileHeader) > .tweetAuthor > div > div:first-of-type > p > a {
+    color: var(--primary-color);
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > div:not(:first-of-type):not(:nth-of-type(2)) > .tweetAuthor > div > div > a,
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > div:not(.profileHeader) > .tweetAuthor > div > div > a {
+    min-height: inherit;
+    padding: 0px 0px 0px 10px;
+    color: var(--primary-color);
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > div:not(:first-of-type):not(:nth-of-type(2)) > .tweetAuthor > div > div:last-of-type > p,
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > div:not(.profileHeader) > .tweetAuthor > div > div:last-of-type > p {
+    color: var(--text-color);
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > div:not(:first-of-type):not(:nth-of-type(2)) > .tweetContent,
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > div:not(.profileHeader) > .tweetContent {
+    width: 100%;
+    height: fit-content;
+    border-top: 1px solid #00000020;
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > div:not(:first-of-type):not(:nth-of-type(2)) > .tweetContent > div,
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > div:not(.profileHeader) > .tweetContent > div {
+    width: calc(100% - 20px);
+    height: fit-content;
+    margin: 10px;
+    word-break: break-word;
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > div:not(:first-of-type):not(:nth-of-type(2)) > .tweetContent *:not(img),
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > div:not(.profileHeader) > .tweetContent *:not(img) {
+    padding: 5px;
+    color: var(--text-color);
+    background-color: transparent !important;
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > div:not(:first-of-type):not(:nth-of-type(2)) > .tweetContent img,
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > div:not(.profileHeader) > .tweetContent img {
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > div:not(:first-of-type):not(:nth-of-type(2)) > .tweetContent a,
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > div:not(.profileHeader) > .tweetContent a {
+    color: var(--primary-color);
+    font-size: 16px;
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > div:not(:first-of-type):not(:nth-of-type(2)) > .comment,
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > div:not(.profileHeader) > .comment {
+    width: 100%;
+    border-top: 1px solid #00000020;
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > div:not(:first-of-type):not(:nth-of-type(2)) > .comment > input,
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > div:not(.profileHeader) > .comment > input {
+    width: 100%;
+    color: var(--text-color);
+    padding: 5px 10px;
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > div:not(:first-of-type):not(:nth-of-type(2)) > .tweetButtons,
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > div:not(.profileHeader) > .tweetButtons {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #00000020;
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > div:not(:first-of-type):not(:nth-of-type(2)) > .tweetButtons > div,
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > div:not(.profileHeader) > .tweetButtons > div {
+    display: flex;
+    margin: 10px;
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > div:not(:first-of-type):not(:nth-of-type(2)) > .tweetButtons > div > .retweet,
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > div:not(.profileHeader) > .tweetButtons > div > .retweet,
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > div:not(:first-of-type):not(:nth-of-type(2)) > .tweetButtons > div > .comment,
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > div:not(.profileHeader) > .tweetButtons > div > .comment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin: 0px 10px 0px 0px;
+    padding: 0px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    transition: background-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > div:not(:first-of-type):not(:nth-of-type(2)) > .tweetButtons > div > .retweet:hover,
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > div:not(.profileHeader) > .tweetButtons > div > .retweet:hover,
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > div:not(:first-of-type):not(:nth-of-type(2)) > .tweetButtons > div > .comment:hover,
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > div:not(.profileHeader) > .tweetButtons > div > .comment:hover{
+    background-color: var(--primary-color);
+    box-shadow: 0px 0px 10px var(--primary-color);
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > div:not(:first-of-type):not(:nth-of-type(2)) > .tweetButtons > div > .retweet > i,
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > div:not(.profileHeader) > .tweetButtons > div > .retweet > i,
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > div:not(:first-of-type):not(:nth-of-type(2)) > .tweetButtons > div > .comment > i,
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > div:not(.profileHeader) > .tweetButtons > div > .comment > i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    color: var(--text-color);
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > div:not(:first-of-type):not(:nth-of-type(2)) > .tweetButtons > div > .deleteTweet,
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > div:not(.profileHeader) > .tweetButtons > div > .deleteTweet {
+    padding: 5px 10px;
+    color: var(--text-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    background-color: var(--background-color);
+    box-shadow: var(--box-shadow);
+    transition: background-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > div:not(:first-of-type):not(:nth-of-type(2)) > .tweetButtons > div > .deleteTweet:hover,
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > div:not(.profileHeader) > .tweetButtons > div > .deleteTweet:hover {
+    background-color: var(--primary-color);
+    box-shadow: 0px 0px 10px var(--primary-color);
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > div:not(:first-of-type):not(:nth-of-type(2)) > .commentsContainer,
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > div:not(.profileHeader) > .commentsContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out;
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > div:not(:first-of-type):not(:nth-of-type(2)) > .commentsContainer.showComments,
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > div:not(.profileHeader) > .commentsContainer.showComments {
+    height: 500px;
+    overflow-y: auto;
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > div:not(:first-of-type):not(:nth-of-type(2)) > .commentsContainer > div,
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > div:not(.profileHeader) > .commentsContainer > div {
+    display: flex;
+    width: calc(100% - 20px);
+    min-height: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > div:not(:first-of-type):not(:nth-of-type(2)) > .commentsContainer > div > .commentAvatar,
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > div:not(.profileHeader) > .commentsContainer > div > .commentAvatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 100%;
+    border-right: 1px solid #00000020;
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > div:not(:first-of-type):not(:nth-of-type(2)) > .commentsContainer > div > .commentAvatar > img,
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > div:not(.profileHeader) > .commentsContainer > div > .commentAvatar > img {
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    margin: auto;
+    border: 1px solid var(--background-color);
+    border-radius: 50%;
+    box-shadow: var(--box-shadow);
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > div:not(:first-of-type):not(:nth-of-type(2)) > .commentsContainer > div > .commentContent,
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > div:not(.profileHeader) > .commentsContainer > div > .commentContent {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 60px);
+    height: 100%;
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > div:not(:first-of-type):not(:nth-of-type(2)) > .commentsContainer > div > .commentContent > div,
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > div:not(.profileHeader) > .commentsContainer > div > .commentContent > div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > div:not(:first-of-type):not(:nth-of-type(2)) > .commentsContainer > div > .commentContent > div > a,
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > div:not(.profileHeader) > .commentsContainer > div > .commentContent > div > a {
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 0px 10px;
+    color: var(--primary-color);
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > div:not(:first-of-type):not(:nth-of-type(2)) > .commentsContainer > div > .commentContent > div:first-of-type > p,
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > div:not(.profileHeader) > .commentsContainer > div > .commentContent > div:first-of-type > p {
+    color: var(--text-color);
+}
+.homeContainer > .loggedContent > .skeleton-container-full > .row > .loggedUser > .row > div:not(:first-of-type):not(:nth-of-type(2)) > .commentsContainer > div > .commentContent > div:last-of-type > p,
+.profileContainer > .profileContent > .skeleton-container-full > .row > .profile > .row > div:not(.profileHeader) > .commentsContainer > div > .commentContent > div:last-of-type > p {
+    padding: 0px 0px 0px 10px;
+    color: var(--text-color);
+}
+/* -------------------------------------------------------------------- */
+/* CSS - Picture fullscreen */
+/* -------------------------------------------------------------------- */
+.view_image_body {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: var(--background-transparent);
+    backdrop-filter: blur(10px);
+}
+.view_image {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    cursor: zoom-out;
+}
+.view_image_img {
+    max-height: 80%;
+    max-width: 80%;
+    margin: auto;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    object-fit: cover;
+    cursor: zoom-out;
+    border-radius: 5px;
+    border: 10px solid var(--background-color);
+    box-shadow: var(--box-shadow);
+    animation: fadeIn 0.5s ease-in-out;
+}
+.img_full_screen {
+    cursor: zoom-in;
+}

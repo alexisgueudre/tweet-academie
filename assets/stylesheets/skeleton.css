@@ -1,0 +1,281 @@
+/*
+* Skeleton V2.0.4
+* Copyright 2014, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 12/29/2014
+*/
+/* -------------------------------------------------------------------- */
+/* CSS ( Skeleton Edited ) - Containers */
+/* -------------------------------------------------------------------- */
+.skeleton-container,
+.skeleton-container-full {
+    display: grid;
+    height: 100%;
+    margin: 0px 10px
+}
+.skeleton-container {
+    max-width: 1180px;
+}
+.skeleton-container-full {
+    width: calc(100% - 20px);
+}
+/* -------------------------------------------------------------------- */
+/* CSS ( Skeleton Edited ) - Rows */
+/* -------------------------------------------------------------------- */
+.row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    width: 100%;
+}
+/* -------------------------------------------------------------------- */
+/* CSS ( Skeleton Edited ) - Columns */
+/* -------------------------------------------------------------------- */
+.skeleton-col-1 {
+    grid-column: span 1;
+}
+.skeleton-col-2 {
+    grid-column: span 2;
+}
+.skeleton-col-3 {
+    grid-column: span 3;
+}
+.skeleton-col-4 {
+    grid-column: span 4;
+}
+.skeleton-col-5 {
+    grid-column: span 5;
+}
+.skeleton-col-6 {
+    grid-column: span 6;
+}
+.skeleton-col-7 {
+    grid-column: span 7;
+}
+.skeleton-col-8 {
+    grid-column: span 8;
+}
+.skeleton-col-9 {
+    grid-column: span 9;
+}
+.skeleton-col-10 {
+    grid-column: span 10;
+}
+.skeleton-col-11 {
+    grid-column: span 11;
+}
+.skeleton-col-12 {
+    grid-column: span 12;
+}
+/* -------------------------------------------------------------------- */
+/* CSS ( Skeleton Edited ) - Visibility */
+/* -------------------------------------------------------------------- */
+.skeleton-visible {
+    display: initial !important;
+}
+.skeleton-hidden {
+    display: none !important;
+}
+/* -------------------------------------------------------------------- */
+/* CSS ( Skeleton Edited ) - Small Breakpoint */
+/* -------------------------------------------------------------------- */
+@media (min-width: 550px) {
+    .skeleton-container {
+        max-width: 530px;
+    }
+    .skeleton-col-sm-1 {
+        grid-column: span 1;
+    }
+    .skeleton-col-sm-2 {
+        grid-column: span 2;
+    }
+    .skeleton-col-sm-3 {
+        grid-column: span 3;
+    }
+    .skeleton-col-sm-4 {
+        grid-column: span 4;
+    }
+    .skeleton-col-sm-5 {
+        grid-column: span 5;
+    }
+    .skeleton-col-sm-6 {
+        grid-column: span 6;
+    }
+    .skeleton-col-sm-7 {
+        grid-column: span 7;
+    }
+    .skeleton-col-sm-8 {
+        grid-column: span 8;
+    }
+    .skeleton-col-sm-9 {
+        grid-column: span 9;
+    }
+    .skeleton-col-sm-10 {
+        grid-column: span 10;
+    }
+    .skeleton-col-sm-11 {
+        grid-column: span 11;
+    }
+    .skeleton-col-sm-12 {
+        grid-column: span 12;
+    }
+    .skeleton-visible-sm {
+        display: initial !important;
+    }
+    .skeleton-hidden-sm {
+        display: none !important;
+    }
+}
+/* -------------------------------------------------------------------- */
+/* CSS ( Skeleton Edited ) - Medium Breakpoint */
+/* -------------------------------------------------------------------- */
+@media (min-width: 750px) {
+    .skeleton-container {
+        max-width: 730px;
+    }
+    .skeleton-col-md-1 {
+        grid-column: span 1;
+    }
+    .skeleton-col-md-2 {
+        grid-column: span 2;
+    }
+    .skeleton-col-md-3 {
+        grid-column: span 3;
+    }
+    .skeleton-col-md-4 {
+        grid-column: span 4;
+    }
+    .skeleton-col-md-5 {
+        grid-column: span 5;
+    }
+    .skeleton-col-md-6 {
+        grid-column: span 6;
+    }
+    .skeleton-col-md-7 {
+        grid-column: span 7;
+    }
+    .skeleton-col-md-8 {
+        grid-column: span 8;
+    }
+    .skeleton-col-md-9 {
+        grid-column: span 9;
+    }
+    .skeleton-col-md-10 {
+        grid-column: span 10;
+    }
+    .skeleton-col-md-11 {
+        grid-column: span 11;
+    }
+    .skeleton-col-md-12 {
+        grid-column: span 12;
+    }
+    .skeleton-visible-md {
+        display: initial !important;
+    }
+    .skeleton-hidden-md {
+        display: none !important;
+    }
+}
+/* -------------------------------------------------------------------- */
+/* CSS ( Skeleton Edited ) - Large Breakpoint */
+/* -------------------------------------------------------------------- */
+@media (min-width: 1000px) {
+    .skeleton-container {
+        max-width: 980px;
+    }
+    .skeleton-col-lg-1 {
+        grid-column: span 1;
+    }
+    .skeleton-col-lg-2 {
+        grid-column: span 2;
+    }
+    .skeleton-col-lg-3 {
+        grid-column: span 3;
+    }
+    .skeleton-col-lg-4 {
+        grid-column: span 4;
+    }
+    .skeleton-col-lg-5 {
+        grid-column: span 5;
+    }
+    .skeleton-col-lg-6 {
+        grid-column: span 6;
+    }
+    .skeleton-col-lg-7 {
+        grid-column: span 7;
+    }
+    .skeleton-col-lg-8 {
+        grid-column: span 8;
+    }
+    .skeleton-col-lg-9 {
+        grid-column: span 9;
+    }
+    .skeleton-col-lg-10 {
+        grid-column: span 10;
+    }
+    .skeleton-col-lg-11 {
+        grid-column: span 11;
+    }
+    .skeleton-col-lg-12 {
+        grid-column: span 12;
+    }
+    .skeleton-visible-lg {
+        display: initial !important;
+    }
+    .skeleton-hidden-lg {
+        display: none !important;
+    }
+}
+/* -------------------------------------------------------------------- */
+/* CSS ( Skeleton Edited ) - Extra Large Breakpoint */
+/* -------------------------------------------------------------------- */
+@media (min-width: 1200px) {
+    .skeleton-container {
+        max-width: 1180px;
+    }
+    .skeleton-col-xl-1 {
+        grid-column: span 1;
+    }
+    .skeleton-col-xl-2 {
+        grid-column: span 2;
+    }
+    .skeleton-col-xl-3 {
+        grid-column: span 3;
+    }
+    .skeleton-col-xl-4 {
+        grid-column: span 4;
+    }
+    .skeleton-col-xl-5 {
+        grid-column: span 5;
+    }
+    .skeleton-col-xl-6 {
+        grid-column: span 6;
+    }
+    .skeleton-col-xl-7 {
+        grid-column: span 7;
+    }
+    .skeleton-col-xl-8 {
+        grid-column: span 8;
+    }
+    .skeleton-col-xl-9 {
+        grid-column: span 9;
+    }
+    .skeleton-col-xl-10 {
+        grid-column: span 10;
+    }
+    .skeleton-col-xl-11 {
+        grid-column: span 11;
+    }
+    .skeleton-col-xl-12 {
+        grid-column: span 12;
+    }
+    .skeleton-visible-xl {
+        display: initial !important;
+    }
+    .skeleton-hidden-xl {
+        display: none !important;
+    }
+}

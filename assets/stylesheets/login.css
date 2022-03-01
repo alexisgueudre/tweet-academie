@@ -1,0 +1,94 @@
+/* -------------------------------------------------------------------- */
+/* CSS - Login container */
+/* -------------------------------------------------------------------- */
+.loginContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+    margin: 40px 0px 0px 0px;
+    background-color: var(--background-transparent);
+    backdrop-filter: blur(2px);
+    overflow: hidden;
+}
+/* -------------------------------------------------------------------- */
+/* CSS - Login form */
+/* -------------------------------------------------------------------- */
+.loginContainer > form {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 400px;
+    margin: auto;
+    border-radius: 5px;
+    border: 1px solid var(--background-color);
+    background-color: var(--background-transparent);
+    backdrop-filter: blur(2px);
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+    transition: border-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+.loginContainer > form:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0px 0px 10px var(--primary-color);
+}
+.loginContainer > form > h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    margin: 0px;
+    color: var(--primary-color);
+    background-color: var(--background-color);
+    box-shadow: var(--box-shadow);
+    z-index: 80;
+}
+.loginContainer > form > .siteLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    max-height: inherit;
+    margin: auto auto 20px auto;
+}
+.loginContainer > form > input:not([type="submit"]) {
+    width: 180px;
+    margin: 10px auto;
+    padding: 5px 10px;
+    color: var(--text-color);
+    border: 1px solid var(--background-color);
+    border-radius: 5px;
+    background-color: var(--background-color);
+    box-shadow: var(--box-shadow) inset;
+    transition: border-color 0.5s ease-in-out, background-color 0.5s ease-in-out, color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+.loginContainer > form > input:not([type="submit"]):focus {
+    border-color: var(--primary-color);
+    box-shadow: 0px 0px 10px var(--primary-color);
+}
+.loginContainer > form > input[type="submit"] {
+    margin: 10px auto;
+    padding: 5px 10px;
+    color: var(--text-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    transition: background-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+.loginContainer > form > input[type="submit"]:hover {
+    background-color: var(--primary-color);
+    box-shadow: 0px 0px 10px var(--primary-color);
+}
+.loginContainer > form > hr {
+    width: 180px;
+    height: 1px;
+    margin: 10px auto;
+    background-color: var(--background-color);
+}
+.loginContainer > form > .switchInput {
+    min-height: inherit;
+    margin: 10px auto auto auto;
+    color: var(--primary-color);
+}

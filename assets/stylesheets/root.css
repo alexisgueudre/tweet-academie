@@ -1,0 +1,206 @@
+/* -------------------------------------------------------------------- */
+/* CSS - Google Fonts */
+/* -------------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+/* -------------------------------------------------------------------- */
+/* CSS - Reset */
+/* -------------------------------------------------------------------- */
+* {
+    height: fit-content;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Nunito";
+    text-decoration: none !important;
+    line-height: initial;
+    list-style: none;
+    border: none;
+    background: none;
+    outline: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, border-color 0.5s ease-in-out;
+}
+h1 {
+    font-size: 30px;
+}
+h2 {
+    font-size: 26px;
+}
+h3 {
+    font-size: 24px;
+}
+h4 {
+    font-size: 20px;
+}
+h5 {
+    font-size: 16px;
+}
+a, label, p, input, span, button, h6, select, option, li, i {
+    font-size: 14px;
+}
+select, input:not([type="submit"]) {
+    height: 30px;
+    padding: 5px 10px;
+}
+a, button, input[type="submit"] {
+    min-height: 30px;
+    max-height: 30px;
+    cursor: pointer;
+}
+img {
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    margin: 5px;
+    object-fit: cover;
+}
+img[src="assets/images/logos/logo.png"] {
+    object-fit: contain;
+}
+/* -------------------------------------------------------------------- */
+/* CSS - Themes */
+/* -------------------------------------------------------------------- */
+[data-theme="light"] {
+    --text-color: #2B2B2B;
+    --text-alternative: #FFFFFF;
+    --primary-color: #1DA1F2;
+    --error-color: #B33636;
+    --success-color: #40B336;
+    --background-color: #FFFFFF;
+    --background-error: #E94949;
+    --background-success: #49E951;
+    --background-transparent: #FFFFFF50;
+    --box-shadow: 2px 2px 5px #00000050;
+}
+[data-theme="dark"] {
+    --text-color: #FFFFFF;
+    --text-alternative: #FFFFFF;
+    --primary-color: #1DA1F2;
+    --error-color: #B33636;
+    --success-color: #40B336;
+    --background-color: #2B2B2B;
+    --background-error: #E94949;
+    --background-success: #49E951;
+    --background-transparent: #00000050;
+    --box-shadow: 2px 2px 5px #00000050;
+}
+/* -------------------------------------------------------------------- */
+/* CSS - Scroll */
+/* -------------------------------------------------------------------- */
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: var(--background-color);
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+}
+/* -------------------------------------------------------------------- */
+/* CSS - Alerts */
+/* -------------------------------------------------------------------- */
+.alertError,
+.alertSuccess {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    margin: 0px auto;
+    position: fixed;
+    left: 50%;
+    top: 120px;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    background-color: var(--background-transparent);
+    backdrop-filter: blur(10px);
+    box-shadow: var(--box-shadow);
+    animation: fadeIn 0.5s ease-in-out;
+}
+.alertError {
+    border-left: 5px solid var(--background-error);
+}
+.alertSuccess {
+    border-left: 5px solid var(--background-success);
+}
+.alertError > i,
+.alertSuccess > i {
+    margin: auto 0px auto 10px;
+}
+.alertError > p,
+.alertSuccess > p {
+    height: fit-content;
+    margin: 0px;
+    padding: 10px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+.alertError > i,
+.alertError > p {
+    color: var(--error-color);
+}
+.alertSuccess > i,
+.alertSuccess > p {
+    color: var(--success-color);
+}
+.alertError > button,
+.alertSuccess > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(35px / 2);
+    height: 100%;
+    max-height: inherit;
+    margin: 0px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.alertError > button {
+    background-color: var(--background-error);
+}
+.alertSuccess > button {
+    background-color: var(--background-success);
+}
+.alertError > button > i {
+    margin: auto;
+    color: var(--error-color);
+}
+.alertSuccess > button > i {
+    margin: auto;
+    color: var(--success-color);
+}
+/* -------------------------------------------------------------------- */
+/* CSS - Animations */
+/* -------------------------------------------------------------------- */
+.fadeIn {
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+.fadeOut {
+    animation: fadeOut 0.5s ease-in-out forwards;
+}
+/* -------------------------------------------------------------------- */
+/* CSS - Keyframes */
+/* -------------------------------------------------------------------- */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    } 100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    } 100% {
+        opacity: 0;
+    }
+}
+@keyframes flash {
+    0% {
+        background-color: var(--background-transparent);
+        box-shadow: var(--box-shadow) inset;
+    } 50% {
+        background-color: var(--primary-color);
+        box-shadow: 0px 0px 10px var(--primary-color);
+    } 100% {
+        background-color: var(--background-transparent);
+        box-shadow: var(--box-shadow) inset;
+    }
+};

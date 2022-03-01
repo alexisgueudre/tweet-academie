@@ -1,0 +1,134 @@
+/* -------------------------------------------------------------------- */
+/* CSS - Top bar */
+/* -------------------------------------------------------------------- */
+body > .topBar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    background-color: var(--background-color);
+    box-shadow: var(--box-shadow);
+    z-index: 2000;
+}
+/* -------------------------------------------------------------------- */
+/* CSS - Site logo */
+/* -------------------------------------------------------------------- */
+body > .topBar > #siteLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    max-height: inherit;
+}
+/* -------------------------------------------------------------------- */
+/* CSS - Menu button */
+/* -------------------------------------------------------------------- */
+body > .topBar > .menuButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    max-height: inherit;
+}
+body > .topBar > .menuButton > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+}
+body > .topBar > .menuButton > div > span {
+    width: 20px;
+    height: 1px;
+    background-color: var(--primary-color);
+    transition: transform 0.5s ease-in-out, width 0.5s ease-in-out;
+}
+body > .topBar > .menuButton > div > span:nth-last-of-type(2) {
+    margin: 5px auto;
+}
+/* -------------------------------------------------------------------- */
+/* CSS - Menu */
+/* -------------------------------------------------------------------- */
+body > .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: -100%;
+    background-color: var(--background-transparent);
+    backdrop-filter: blur(20px);
+    transition: top 0.5s ease-in-out;
+    z-index: 2000;
+}
+body > .menu > .siteLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    max-height: inherit;
+    margin: auto auto 0px auto;
+}
+body > .menu > ul {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin: 10px auto auto auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+body > .menu > ul > li {
+    margin: 0px 0px 10px 0px;
+}
+body > .menu > ul > li:last-of-type {
+    margin: 0px;
+}
+body > .menu > ul > li > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    color: var(--text-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    transition: background-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+body > .menu > ul > li > a:hover {
+    background-color: var(--primary-color);
+    box-shadow: 0px 0px 10px var(--primary-color);
+}
+/* -------------------------------------------------------------------- */
+/* CSS - Close menu button */
+/* -------------------------------------------------------------------- */
+.closeMenuButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: fit-content;
+    margin: 0px auto;
+    padding: 5px 10px;
+    position: absolute;
+    bottom: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    transition: background-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+.closeMenuButton:hover {
+    background-color: var(--primary-color);
+    box-shadow: 0px 0px 10px var(--primary-color);
+}
+.closeMenuButton > i {
+    color: var(--text-color);
+}
